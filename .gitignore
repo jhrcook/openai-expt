@@ -217,4 +217,5 @@ cython_debug/
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,python,visualstudiocode
 
-SECRETS*
+project_secrets.py
+.python-version
