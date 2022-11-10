@@ -39,7 +39,7 @@ def _cache_dir(prompt: str, size: ImageSize) -> Path:
         .replace(" ", "-")
     )
     name = f"{clean_prompt}_{_IMAGE_SIZES[size]}"
-    cache_dir = Path("cache") / name
+    cache_dir = Path("dalle-results") / name
     if not cache_dir.exists():
         cache_dir.mkdir(parents=True)
     return cache_dir
@@ -129,4 +129,3 @@ def examples(n: int = 3) -> None:
 
 if __name__ == "__main__":
     app()
-    # prompt =
